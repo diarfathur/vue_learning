@@ -3,7 +3,13 @@ import pkg from './package'
 
 export default {
   mode: 'universal',
-
+  generate: {
+    routes: [
+      '/quotes/rindu',
+      '/quotes/semangat',
+      '/quotes/psikis'
+    ]
+  },
   /*
   ** Headers of the page
   */
