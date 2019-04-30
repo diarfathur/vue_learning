@@ -5,7 +5,7 @@
         <h2>My Profile</h2>
         <v-card>
           <v-img
-            src="https://upload.wikimedia.org/wikipedia/commons/3/37/No_person.jpg"
+            :src="require(`assets/img/${ image }`)"
           ></v-img>
         </v-card>
     </v-flex>
@@ -18,6 +18,11 @@
   export default {
     components: {
       Header
+    },
+    data () {
+      return {
+        image : 'no-image.jpg',
+      }
     }
   }
 </script>
